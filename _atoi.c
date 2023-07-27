@@ -1,14 +1,4 @@
 #include "shell.h"
-#include <stdio.h>
-
-int _atoi(char *s);
-
-int main() {
-    char str[] = "123";
-    int result = _atoi(str);
-    printf("Result: %d\n", result);
-    return 0;
-}
 
 int _atoi(char *s)
 {
