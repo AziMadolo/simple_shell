@@ -1,25 +1,16 @@
 #include "shell.h"
+#include <stdio.h>
 
-/**
- * is_alpha_character - Check if a character is alphabetic.
- * @c: The character to check.
- *
- * Return: 1 if the character is alphabetic, 0 otherwise.
- */
-int is_alpha_character(int c)
-{
-    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-        return (1);
-    return (0);
+int _atoi(char *s);
+
+int main() {
+    char str[] = "123";
+    int result = _atoi(str);
+    printf("Result: %d\n", result);
+    return 0;
 }
 
-/**
- * string_to_integer - Convert a string to an integer.
- * @s: The string to be converted.
- *
- * Return: The converted integer if successful, 0 otherwise.
- */
-int string_to_integer(char *s)
+int _atoi(char *s)
 {
     int i, sign = 1, flag = 0, output;
     unsigned int result = 0;
@@ -44,5 +35,5 @@ int string_to_integer(char *s)
     else
         output = result;
 
-    return (output);
+    return output;
 }
