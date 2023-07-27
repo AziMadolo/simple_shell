@@ -1,3 +1,5 @@
+#include "shell.h"
+
 /**
  * is_alpha_character - Check if a character is alphabetic.
  * @c: The character to check.
